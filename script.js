@@ -32,12 +32,13 @@ input.addEventListener("keydown",async function(event){
         let name = document.getElementById("nome")
         let id  = document.getElementById('id')
         let front = document.createElement('img')
+        let white = document.getElementById("white")
         name.classList.remove("hidden")
         id.classList.remove("hidden")
+        white.appendChild(front);
         id.innerHTML = "Pokedex: "+pokemon[1] 
         name.innerHTML = title(pokemon[0])
         front.src = pokemon[2]
-        name.appendChild(front);
         input.value=''
     }
 })
