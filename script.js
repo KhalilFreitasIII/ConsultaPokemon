@@ -31,14 +31,16 @@ input.addEventListener("keydown",async function(event){
         const pokemon = await dadosPokemon(input.value.toLowerCase().trim())
         let name = document.getElementById("nome")
         let id  = document.getElementById('id')
+        if(document.getElementsByTagName(Image))
+            document.getElementsByTagName(Image).src=pokemon[2]
         let front = document.createElement('img')
         let white = document.getElementById("white")
+        front.src = pokemon[2]
         name.classList.remove("hidden")
         id.classList.remove("hidden")
         white.appendChild(front);
         id.innerHTML = "Pokedex: "+pokemon[1] 
         name.innerHTML = title(pokemon[0])
-        front.src = pokemon[2]
         input.value=''
     }
 })
