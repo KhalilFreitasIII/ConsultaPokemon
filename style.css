@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeebeb;
+    padding: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #nome, #id {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #id {
+    color: #8b6868;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
